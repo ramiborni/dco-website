@@ -37,11 +37,13 @@ export default function Home(props) {
                         <Typography variant="h6">
                            AN ADVENTURE MADE ONLY FOR BRAVE TAMERS , MADE FOR YOU
                         </Typography>
+                        <Link href="/account/signup">
                         <Button variant="outlined" color="inherit" className="mt-5 self-center">
                             <Typography className={Utilities.Heartbit+" text-white "} variant="h5">
                                 SIGN UP IN CLOSED BETA TEST
                             </Typography>
                         </Button>
+                        </Link>
 
                     </Grid>
                 </Grid>
