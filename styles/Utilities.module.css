@@ -1,0 +1,54 @@
+.CFmister{
+  font-family: 'CFmister', sans-serif !important;
+}
+
+.Heartbit{
+  font-family: 'Heartbit', sans-serif !important;
+}
+
+
+.FirstBackgroundHome{
+      background: url('/wallpapers/wallpaper-1.jpg')no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+.SecondBackgroundHome{
+  background: url('/wallpapers/wallpaper-2.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.ThirdBackgroundHome{
+  background: url('/wallpapers/wallpaper-3.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+.ForthBackgroundHome{
+background: url('/wallpapers/wallpaper-4.jpg') no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.FifthBackgroundHome{
+  background: url('/wallpapers/wallpaper-5.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.AuthBackground{
+  height: 100vh;
+  overflow: hidden;
+  background: url('/wallpapers/auth-wallpaper.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 0;
+}
