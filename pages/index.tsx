@@ -56,6 +56,9 @@ export default function Home(props) {
                     </Link>
                     <Link href="/news">
                       <Button className={Utilities.Heartbit+" text-white text-xl"}>News</Button>
+                    </Link>   
+                    <Link href="/account/download">
+                      <Button className={Utilities.Heartbit+" text-white text-xl"}>Download</Button>
                     </Link>                   
                     <Link href="/contact">
                        <Button className={Utilities.Heartbit+" text-white text-xl"}>Contact</Button>
