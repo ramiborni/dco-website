@@ -70,7 +70,7 @@ export default function Home(props) {
                     </a>
                     <div className="flex-grow"></div>
 
-                    <Link href="/account/donate">
+                    <Link href="/account/profile/donate">
                        <Button color="inherit" variant="outlined" className={Utilities.Heartbit+" text-white text-xl"}>Donate</Button>
                     </Link>
                 </Toolbar>
