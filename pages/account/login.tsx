@@ -4,12 +4,14 @@ import React from "react";
 import AuthLayout from "../../components/layout/AuthLayout";
 import Utilities from '../../styles/Utilities.module.css'
 import Link from 'next/link'
+import HeadSpecified from "../../components/public/HeadSpecified";
 
 const login = (props) => {
     const login = () => {}
     
     return (
         <>
+         <HeadSpecified title="Login"/>
         <AuthLayout title="Login">
              <Typography variant="h5"
                 className={
