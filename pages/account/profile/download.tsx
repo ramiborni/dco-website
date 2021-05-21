@@ -70,7 +70,7 @@ const download = () => {
                 </div>
             </Paper>
             <div className="h-10"></div>
-            <Paper className="p-5 space-y-5">
+            <Paper className="p-5 space-y-5 hidden sm:block">
 
                 <Typography variant="h5"
                     className={

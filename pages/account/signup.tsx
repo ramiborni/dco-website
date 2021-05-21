@@ -4,9 +4,14 @@ import AuthLayout from "../../components/layout/AuthLayout";
 import Utilities from '../../styles/Utilities.module.css'
 import Link from 'next/link'
 import HeadSpecified from "../../components/public/HeadSpecified";
+import { useRouter } from 'next/router'
 
 const signup = (props) => {
-    const signup = () => {}
+    const router = useRouter()
+
+    const signup = () => {
+        router.push('/account/profile');
+    }
     return (
         <>
             <HeadSpecified title="Login"/>

@@ -21,7 +21,6 @@ const DonationCard = ({
     price,
     link,
     additionalBadge,
-    index,
     paypalSDKReady,
     setPaypalSDKReady
 } : {

@@ -152,7 +152,7 @@ const ProfileLayout = ({children}) => {
                             >
                                 <MenuIcon/>
                             </IconButton>
-                            <Link href="/account/profile">
+                            <Link href="/">
                                 <img alt="Digimon Crisis logo" height="120" width="120" src="/DigimonCrisis.png"/>
 
                             </Link>
