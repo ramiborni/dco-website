@@ -25,6 +25,7 @@ import { Grid } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 import SettingsRoundedIcon from '@material-ui/icons/SettingsRounded';
 import ExitToAppRoundedIcon from '@material-ui/icons/ExitToAppRounded';
+import { useRouter } from 'next/router'
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) =>
     createStyles({
@@ -63,7 +64,7 @@ const useStyles = makeStyles((theme) =>
 );
 
 
-const ProfileLayout = ({children}) => {
+const ProfileLayout = ({children,indexPage}) => {
     const darkTheme = createMuiTheme({
         palette: {
             type: 'dark',
@@ -77,7 +78,6 @@ const ProfileLayout = ({children}) => {
     });
     const classes = useStyles();
     const [mobileOpen, setMobileOpen] = React.useState(false);
-    const [drawerIndexItem,setIndexDrawer] = React.useState(0);
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
@@ -109,6 +109,8 @@ const ProfileLayout = ({children}) => {
         },
         
     ]
+    const router = useRouter()
+
     const drawer = <div className="p-2">
         
         <Paper className="rounded bg-gray-500 p-2 mb-5	">
@@ -123,12 +125,14 @@ const ProfileLayout = ({children}) => {
             </Grid>
         </Paper>
         <List className="w-full">
-            {drawerList.map((item,index) => <Link key={index} onClick={() => {drawerIndexItem=index}}  href={item.path}>
-                <ListItem button selected={drawerIndexItem===index}>
+            {drawerList.map((item,index) =>
+                <ListItem onClick={() => {
+                    router.push(item.path);
+                }} button selected={router.route===item.path}>
                 <ListItemIcon>{item.icon}</ListItemIcon>
                 <ListItemText  primary={<span className={Utilities.Heartbit}>{item.title}</span>}></ListItemText>
             </ListItem>
-            </Link>)}
+            )}
         </List>
     </div>;
 
