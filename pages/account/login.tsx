@@ -9,6 +9,7 @@ const login = (props) => {
     const login = () => {}
     
     return (
+        <>
         <AuthLayout title="Login">
              <Typography variant="h5"
                 className={
@@ -44,6 +45,7 @@ const login = (props) => {
        
        
         </AuthLayout>
+        </>
     );
 }
 

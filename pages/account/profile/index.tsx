@@ -10,6 +10,7 @@ import ProfileLayout from "../../../components/layout/ProfileLayout";
 import Utilities from '../../../styles/Utilities.module.css'
 import Link from 'next/link'
 import HeadSpecified from "../../../components/public/HeadSpecified";
+import UserCard from "../../../components/public/UserCard";
 
 const profile = () => {
     return (
@@ -85,19 +86,7 @@ const profile = () => {
                     xs={12}
                     md={5}
                     lg={3}>
-                    <Paper className="flex flex-col p-5 text-center space-y-5">
-                        <Avatar className="m-auto h-32 w-32" src="/icons/agumon-icon.png"/>
-                        <Typography className={
-                                Utilities.CFmister + ' truncate'
-                            }
-                            variant="h6">
-                            rikiraspoutine
-                        </Typography>
-                        <Chip className="m-auto" style={{width:'150px'}} label="NOT ACTIVE"/>
-                        <Button variant="contained" color="primary">ACTIVATE ACCOUNT FOR CBT</Button>
-
-
-                    </Paper>
+                        <UserCard></UserCard>
                 </Grid>
             </Grid>
 
