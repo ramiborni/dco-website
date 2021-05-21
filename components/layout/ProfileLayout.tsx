@@ -90,17 +90,17 @@ const ProfileLayout = ({children}) => {
         {
             "title":"Donation",
             "icon":<StoreRoundedIcon/>,
-            "path":"/account/donation",
+            "path":"/account/profile/donation",
         },
         {
             "title":"Download",
             "icon":<GetAppRoundedIcon/>,
-            "path":"/account/download",
+            "path":"/account/profile/download",
         },
         {
             "title":"Settings",
             "icon":<SettingsRoundedIcon/>,
-            "path":"/account/settings",
+            "path":"/account/profile/settings",
         },
         {
             "title":"Logout",
@@ -123,7 +123,7 @@ const ProfileLayout = ({children}) => {
             </Grid>
         </Paper>
         <List className="w-full">
-            {drawerList.map((item,index) => <Link key={index}  href={item.path}>
+            {drawerList.map((item,index) => <Link key={index} onClick={() => {drawerIndexItem=index}}  href={item.path}>
                 <ListItem button selected={drawerIndexItem===index}>
                 <ListItemIcon>{item.icon}</ListItemIcon>
                 <ListItemText  primary={<span className={Utilities.Heartbit}>{item.title}</span>}></ListItemText>
@@ -136,17 +136,7 @@ const ProfileLayout = ({children}) => {
         <>
             <ThemeProvider theme={darkTheme}>
                 <CssBaseline/>
-                <motion.div initial="hidden" animate="visible" variants={{
-                    hidden: {
-                        opacity: 0
-                    },
-                    visible: {
-                        opacity: 1,
-                        transition: {
-                            delay: .4
-                        }
-                    }
-                }}>
+              
                     <AppBar className={clsx(classes.appBar)} position="relative" elevation={0} color="default">
                         <Toolbar>
                             <IconButton
@@ -197,10 +187,21 @@ const ProfileLayout = ({children}) => {
                         </Hidden>
                     </nav>
                     <main className={classes.content + ' lg:ml-56 p-10'}>
-                      
+                    <motion.div initial="hidden" animate="visible" variants={{
+                    hidden: {
+                        opacity: 0
+                    },
+                    visible: {
+                        opacity: 1,
+                        transition: {
+                            delay: .4
+                        }
+                    }
+                }}>
                        {children}
+                       </motion.div>
                     </main>
-                </motion.div>
+                
 
 
             </ThemeProvider>

@@ -9,9 +9,12 @@ import React from "react";
 import ProfileLayout from "../../../components/layout/ProfileLayout";
 import Utilities from '../../../styles/Utilities.module.css'
 import Link from 'next/link'
+import HeadSpecified from "../../../components/public/HeadSpecified";
 
 const profile = () => {
     return (
+        <>
+        <HeadSpecified title="Profile"/>
         <ProfileLayout>
             <Paper className="bg-yellow-500 p-5 w-full">
                 <Grid container
@@ -99,6 +102,7 @@ const profile = () => {
             </Grid>
 
         </ProfileLayout>
+        </>
     );
 }
 
