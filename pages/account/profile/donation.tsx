@@ -18,7 +18,7 @@ const donation = () => {
         <ProfileLayout>
             <Grid container>
                 <Grid item xs={12} md={6} lg={3}>
-                    <DonationCard paypalSDKReady={paypalSDKReady[0]} setPaypalSDKReady={() => {setPaypalSDKReady([true,true,false,false])}}  index={0} key={"p1"} planName="Gatomon" img="https://i.pinimg.com/originals/4b/4e/cb/4b4ecbed765e935036942bd0fe7bb90b.jpg" desc={['Activate account and join in CBT','1000 Crown','50T']} price={10} link=""></DonationCard>
+                    <DonationCard paypalSDKReady={paypalSDKReady[0]} setPaypalSDKReady={() => {setPaypalSDKReady([true,true,false,false])}}  key={"p1"} planName="Gatomon" img="https://i.pinimg.com/originals/4b/4e/cb/4b4ecbed765e935036942bd0fe7bb90b.jpg" desc={['Activate account and join in CBT','1000 Crown','50T']} price={10} link=""></DonationCard>
                 </Grid>
                 <Grid item xs={12} md={6} lg={3}>
                    <DonationCard  key={"p2"}  paypalSDKReady={paypalSDKReady[1]} setPaypalSDKReady={() => {setPaypalSDKReady([true,true,false,true])}}  planName="Angewomon" img="https://i.pinimg.com/originals/19/91/cb/1991cb3f1d6412d3bb6cbc8471ef10c1.jpg" desc={['Activate account and join in CBT','5000 Crown','200T']}  price={20}  link="" additionalBadge={BEST_VALUE_CHIP}></DonationCard>

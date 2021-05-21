@@ -64,7 +64,7 @@ const useStyles = makeStyles((theme) =>
 );
 
 
-const ProfileLayout = ({children,indexPage}) => {
+const ProfileLayout = ({children}) => {
     const darkTheme = createMuiTheme({
         palette: {
             type: 'dark',
@@ -126,7 +126,7 @@ const ProfileLayout = ({children,indexPage}) => {
         </Paper>
         <List className="w-full">
             {drawerList.map((item,index) =>
-                <ListItem onClick={() => {
+                <ListItem key={'drawerlistitem-'+index} onClick={() => {
                     router.push(item.path);
                 }} button selected={router.route===item.path}>
                 <ListItemIcon>{item.icon}</ListItemIcon>
