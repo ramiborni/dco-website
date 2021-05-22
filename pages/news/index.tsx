@@ -233,7 +233,7 @@ const index = () => {
                        News
                    </Typography>
                    <section>
-                       <Grid container spacing={3}>
+                       <Grid container spacing={3} className="flex-col-reverse lg:flex-row">
                            <Grid item xs={12} lg={9}>
                                <List>
                                       {
