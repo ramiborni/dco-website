@@ -90,7 +90,7 @@ const ProfileLayout = ({children}) => {
         {
             "title":"Donation",
             "icon":<StoreRoundedIcon/>,
-            "path":"/account/profile/donation",
+            "path":"/account/profile/donate",
         },
         {
             "title":"Download",
