@@ -6,13 +6,10 @@ import React from 'react'
 import Utilities from '../styles/Utilities.module.css'
 
 export default function Home(props) {
-    const getWallpaper =  () => {
-       const wallpapers = [Utilities.FirstBackgroundHome,Utilities.SecondBackgroundHome,Utilities.ThirdBackgroundHome,Utilities.ForthBackgroundHome,Utilities.FifthBackgroundHome];
-       return wallpapers[Math.floor(Math.random() * wallpapers.length)];
-    }
+
     return (
         <section className={
-                'p-2 ' + ' ' + getWallpaper()
+                'p-2 ' + ' ' + Utilities.BackgroundHome
             }
             style={
                 {height: '100vh'}
@@ -25,9 +22,9 @@ export default function Home(props) {
                     <img alt="Digimon Crisis logo" height="150" width="150" src="DigimonCrisis.png"/>
                 </Toolbar>
             </AppBar>
-            <article className="text-white h-full pr-7">
-                <Grid container className="h-full" justify="flex-end" alignItems="center">
-                    <Grid item>
+            <article className="text-white h-full md:pr-7">
+                <Grid container className="h-full text-center md:text-left" justify="flex-end" alignItems="center">
+                    <Grid item xs={12} md={5}>
                         <Typography variant="h4"
                             className={
                                 Utilities.CFmister
@@ -49,9 +46,9 @@ export default function Home(props) {
                 </Grid>
             </article>
             <AppBar className="top-auto bottom-0" position="fixed" color="transparent">
-                <Toolbar className="space-x-5">
-                    <Link href="/account/signup">
-                       <Button className={Utilities.Heartbit+" text-white text-xl"}>Signup</Button>
+                <Toolbar className="space-x-5 justify-center">
+                    <Link  href="/account/signup">
+                       <Button className={Utilities.Heartbit+" text-white text-xl hidden sm:block"}>Signup</Button>
                     </Link>
                     <Link href="/account/login">
                        <Button className={Utilities.Heartbit+" text-white text-xl"}>Login</Button>
@@ -62,16 +59,13 @@ export default function Home(props) {
                     <Link href="/account/download">
                       <Button className={Utilities.Heartbit+" text-white text-xl"}>Download</Button>
                     </Link>                   
-                    <Link href="/contact">
-                       <Button className={Utilities.Heartbit+" text-white text-xl"}>Contact</Button>
-                    </Link>
                     <a target="_blank" href="https://discord.gg/CMdHdFWH">
                       <Button className={Utilities.Heartbit+" text-white text-xl"}>Discord</Button>
                     </a>
                     <div className="flex-grow"></div>
 
                     <Link href="/account/profile/donate">
-                       <Button color="inherit" variant="outlined" className={Utilities.Heartbit+" text-white text-xl"}>Donate</Button>
+                       <Button color="inherit" variant="outlined" className={Utilities.Heartbit+" text-white text-xl hidden sm:block"}>Donate</Button>
                     </Link>
                 </Toolbar>
             </AppBar>

@@ -9,41 +9,25 @@
   font-family : 'Akzidenz', sans-serif !important;
 }
 
+@media screen and (max-width: 960px) {
+  .BackgroundHome{
+    background: url('/wallpapers/home-wallpaper-mobile.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+}
+@media screen and (min-width: 960px) {
 
-.FirstBackgroundHome{
-      background: url('/wallpapers/wallpaper-1.jpg')no-repeat center center fixed; 
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-}
-.SecondBackgroundHome{
-  background: url('/wallpapers/wallpaper-2.jpg') no-repeat center center fixed; 
+.BackgroundHome{
+  background: url('/wallpapers/home-wallpaper-pc.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-.ThirdBackgroundHome{
-  background: url('/wallpapers/wallpaper-3.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; 
-}
-.ForthBackgroundHome{
-background: url('/wallpapers/wallpaper-4.jpg') no-repeat center center fixed; 
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-}
-.FifthBackgroundHome{
-  background: url('/wallpapers/wallpaper-5.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 .AuthBackground{
   height: 100vh;
